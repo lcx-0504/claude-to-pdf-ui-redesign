@@ -54,11 +54,18 @@ A ghost icon button (download icon) injected next to the Share button in `[data-
 
 The panel reads `document.documentElement.getAttribute("data-mode")` and syncs `data-mode` on the dialog wrapper, so all CDS variables automatically adapt.
 
+## Icon
+
+The original extension icon has opaque black corners. `icon.png` is a cleaned-up version with transparent rounded corners, ready to use at any size (source: 1254×1254).
+
+<img src="icon.png" width="128" />
+
 ## Files
 
 | File | Description |
 |------|-------------|
 | `pdf-panel.js` | Self-contained content script — hides the original plugin UI and injects the redesigned panel. No dependencies beyond Claude's existing CSS. |
+| `icon.png` | Extension icon with transparent corners (1254×1254, lossless). Resize to 16/32/48/128 for manifest. |
 
 ## How to Integrate
 
